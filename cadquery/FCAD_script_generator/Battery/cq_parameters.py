@@ -256,6 +256,31 @@ all_params = {
         dest_dir_prefix = 'Battery.3dshapes'    # Destination directory
         ),
 
+    'Keystone_2460_1xAA': Params(   # ModelName
+        #
+        # https://www.keyelco.com/product-pdf.cfm?p=918
+        #
+        modelname = 'BatteryHolder_Keystone_2460_1xAA',
+        manufacture = 'Keystone',       # Model name
+        serie = '2460',                 # Model name
+        modeltype = 'Cylinder1',        # Model type
+        cellsize = 'AA',                # Battery type
+        cellcnt = 1,                    # Number of battery
+        L  = 57,                        # Package length
+        W  = 16.89,                     # Package width
+        H  = 13.98,                     # Package height
+        A1 = 0.1,                       # package board seperation
+        BS = ['round'],                 # If the side should be 'round' or 'chamfer'
+        BC = ['BC4', 'switchright'],    # Battery contact width, length
+        BM = [26.00, 0.0],              # Center of body
+        npthpins = [('hole', 2.76, -5.995, 02.64), ('hole', 49.24, 5.995, 2.64)],  # 'type', x, y, circle diameter,))]
+        pins = [('tht', 0.0, 0.0, 'round', 0.8, 0.8, 05.00), ('tht', 51.99, 0.0, 'round', 0.8, 0.8, 05.00)],      # Pins tht/smd, x pos, y pos, 'round/rect', diameter/x size, y size, length
+        rotation = 0,                                   # Rotation if required
+        body_color_key  = 'black body',                 # Body color
+        pin_color_key   = 'metal grey pins',            # Pin color
+        dest_dir_prefix = 'Battery.3dshapes'   # Destination directory
+        ),
+
     'Keystone_2466_1xAAA': Params(   # ModelName
         #
         # https://www.keyelco.com/product-pdf.cfm?p=918
